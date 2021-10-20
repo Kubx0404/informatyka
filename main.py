@@ -1,0 +1,6 @@
+filename = input("Podaj nazwę pliku, bez rozszerzenia: ")
+file = open(filename + ".txt")
+maze = file.read()
+maze = maze.replace("X", "\u2588")
+maze = maze.replace("W", "\u2591")
+print(maze)
